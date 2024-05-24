@@ -61,6 +61,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <div id="top"></div>
         <Header />
         <MainContent />
         <Footer />

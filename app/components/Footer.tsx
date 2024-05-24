@@ -4,6 +4,7 @@ const Footer = () => {
   return (
     <footer id="footer" style={{ fontSize: '10px', padding: '10px 0', textAlign: 'center', backgroundColor: '#191e24f5', color: 'white' }}>
       <p>&copy; 2024 Profile</p>
+      <a href="#top" style={{ color: 'white' }}>TOP</a>
     </footer>
   );
 };
