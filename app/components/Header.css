@@ -133,9 +133,6 @@ a {
   width: 250px;
   height: 250px;
   border-radius: 3%;
-  background-image: url(“https://github.com/sharp231/portfoilo1/blob/master/assets/Design.jpg?raw=true“);
-background-image: url(“https://github.com/sharp231/portfoilo1/blob/master/assets/neko.jpg?raw=true“);
-background-image: url(“https://github.com/sharp231/portfoilo1/blob/master/assets/onair.jpg?raw=true“);
 }
 
 li {
@@ -202,7 +199,6 @@ hide {
   max-width: 1920px;
   height: 600px;
   object-fit: cover;
-  background-image: url(“https://github.com/sharp231/portfoilo1/blob/master/assets/Library.jpg?raw=true“);
 }
 
 .about content {
