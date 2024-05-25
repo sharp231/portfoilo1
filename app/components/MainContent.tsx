@@ -20,7 +20,7 @@ const MainContent: React.FC = () => {
     <div>
       <div id='mainvisual'>
         <img
-          src='/assets/Library.jpg'
+          src='/public/img/Library.jpg'
           alt='Library' // 修正: 具体的な内容に
           width='1920'
           height='600'
@@ -35,7 +35,7 @@ const MainContent: React.FC = () => {
         <div className='content'>
           <div className='wrapper'>
             <div className='delayScroll' ref={animatedElement}>
-              <img src='/assets/neko.jpg' alt='neko' className='about-img' />
+              <img src='/public/img/neko.jpg' alt='neko' className='about-img' />
             </div>
           </div>
           <div className='text'>
@@ -55,7 +55,7 @@ const MainContent: React.FC = () => {
           <ul>
             <li>
               <div className='delayScroll'>
-                <img src='/assets/onair.jpg' alt='onair' />
+                <img src='/public/img/onair.jpg' alt='onair' />
               </div>
               <h3 className='content-title'>Web制作</h3>
               <p>
@@ -66,7 +66,7 @@ const MainContent: React.FC = () => {
             </li>
             <li>
               <div className='delayScroll'>
-                <img src='/assets/Design.jpg' alt='Design' />
+                <img src='/public/img//Design.jpg' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
               <p>
