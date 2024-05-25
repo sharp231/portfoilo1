@@ -66,7 +66,7 @@ const MainContent: React.FC = () => {
             </li>
             <li>
               <div className='delayScroll'>
-                <img src='/public/img//Design.jpg' alt='Design' />
+                <img src='/public/img//Design.png' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
               <p>
