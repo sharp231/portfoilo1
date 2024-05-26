@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-
+import ImageComponent from './ImageComponent';
+import animationLibrary from 'gsap';
 
 const MainContent: React.FC = () => {
   const animatedElement = useRef<HTMLDivElement>(null);
@@ -8,7 +8,7 @@ const MainContent: React.FC = () => {
   useEffect(() => {
     const element = animatedElement.current;
     if (element) {
-      gsap.from(element, {
+      animationLibrary.from(element, {
         duration: 0.5,
         // opacity: 0,
         y: 50,
@@ -19,12 +19,11 @@ const MainContent: React.FC = () => {
   return (
     <div>
       <div id='mainvisual'>
-        <img
+        <ImageComponent
           src='/public/img/Library.jpg'
-          alt='Library' // 修正: 具体的な内容に
-          width='1920'
-          height='600'
-          style={{ width: '100%', height: 'auto' }}
+          alt='Library'
+          width={1920}
+          height={600}
         />
       </div>
 
@@ -35,7 +34,11 @@ const MainContent: React.FC = () => {
         <div className='content'>
           <div className='wrapper'>
             <div className='delayScroll' ref={animatedElement}>
-              <img src='/public/img/neko.jpg' alt='neko' className='about-img' />
+              <ImageComponent
+                src='/public/img/neko.jpg'
+                alt='neko'
+                className='about-img'
+              />
             </div>
           </div>
           <div className='text'>
@@ -55,7 +58,7 @@ const MainContent: React.FC = () => {
           <ul>
             <li>
               <div className='delayScroll'>
-                <img src='/public/img/onair.jpg' alt='onair' />
+                <ImageComponent src='/public/img/onair.jpg' alt='onair' />
               </div>
               <h3 className='content-title'>Web制作</h3>
               <p>
@@ -66,7 +69,7 @@ const MainContent: React.FC = () => {
             </li>
             <li>
               <div className='delayScroll'>
-                <img src='/public/img//Design.jpg' alt='Design' />
+                <ImageComponent src='/public/img//Design.jpg' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
               <p>
