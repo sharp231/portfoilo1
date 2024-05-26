@@ -20,7 +20,7 @@ const MainContent: React.FC = () => {
     <div>
       <div id='mainvisual'>
         <ImageComponent
-          src='/public/img/Library.jpg'
+          src='/public/img/Library.png'
           alt='Library'
           width={1920}
           height={600}
@@ -69,7 +69,7 @@ const MainContent: React.FC = () => {
             </li>
             <li>
               <div className='delayScroll'>
-                <ImageComponent src='/public/img//Design.jpg' alt='Design' />
+                <ImageComponent src='/public/img//Design.png' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
               <p>
