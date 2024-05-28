@@ -1,7 +1,11 @@
-import React from 'react';
+// import React, { useState } from 'react';
+// import { NavLink } from 'react-router-dom'; // remixでのルーティングに使用
 import './Header.css';
 
 const Header: React.FC = () => {
+  const googleFormEmbedUrl =
+    'https://docs.google.com/forms/d/1IzHr0LJN7UERNupOW5KeWtD7Ch5lBxMZ5Bv0Z2Hmcfk/viewform?embedded=true';
+
   return (
     <header className='header'>
       <nav className='nav'>
@@ -19,13 +23,9 @@ const Header: React.FC = () => {
               About
             </a>
           </li>
+          {/* hrefを使用してGoogleフォームを別のページに表示 */}
           <li>
-            <a
-              href='https://docs.google.com/forms/d/1IzHr0LJN7UERNupOW5KeWtD7Ch5lBxMZ5Bv0Z2Hmcfk/edit'
-              className='link'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
+            <a href={googleFormEmbedUrl} className='link'>
               Contact
             </a>
           </li>

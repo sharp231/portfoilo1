@@ -22,8 +22,6 @@ const MainContent: React.FC = () => {
         <ImageComponent
           src='/img/Library.png'
           alt='Library'
-          width={1920}
-          height={600}
         />
       </div>
 
@@ -32,14 +30,12 @@ const MainContent: React.FC = () => {
           About
         </h2>
         <div className='content'>
-          <div className='wrapper'>
-            <div className='delayScroll' ref={animatedElement}>
-              <ImageComponent
-                src='/img/neko.png'
-                alt='neko'
-                className='about-img'
-              />
-            </div>
+          <div className='delayScroll' ref={animatedElement}>
+            <ImageComponent
+              src='/img/neko.png'
+              alt='neko'
+              className='about-image'
+            />
           </div>
           <div className='text'>
             <h3 className='content-title'>Lab</h3>
@@ -51,7 +47,7 @@ const MainContent: React.FC = () => {
           </div>
         </div>
 
-        <section id='world' aria-labelledby='profile'>
+        <section id='world' aria-labelledby='world'>
           <h2 id='profile' className='section-title'>
             プログラミングの世界
           </h2>
@@ -69,7 +65,7 @@ const MainContent: React.FC = () => {
             </li>
             <li>
               <div className='delayScroll'>
-                <ImageComponent src='/img//Design.png' alt='Design' />
+                <ImageComponent src='/img/Design.png' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
               <p>

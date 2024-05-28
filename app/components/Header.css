@@ -43,12 +43,12 @@
   color: #a2d2ff; /* 変更: ホバー時の色を変更 */
 }
 
-body {
+/* body {
   color: #383e45;
   font-size: 1rem;
   position: relative;
   height: 100vh;
-}
+} */
 
 * {
   margin: 0;
@@ -59,7 +59,7 @@ body {
   text-align: center;
 }
 
-nav {
+.nav {
   background-color: #191e24f5;
   display: flex;
   justify-content: space-between;
@@ -78,9 +78,9 @@ nav ul {
   gap: 20px;
 }
 
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 .delayScroll img {
   width: 250px;
@@ -133,9 +133,9 @@ li a:hover {
   }
 }
 
-.about-text {
+/* .about-text {
   text-align: left;
-}
+} */
 
 /*-------------------------------------------
 プロフィール
@@ -176,4 +176,12 @@ SP
     position: relative;
     padding: 15px 20px;
   }
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 80px;
 }
