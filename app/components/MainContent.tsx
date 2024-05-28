@@ -20,7 +20,7 @@ const MainContent: React.FC = () => {
     <div>
       <div id='mainvisual'>
         <ImageComponent
-          src='/public/img/Library.png'
+          src='http://example.com/img/Library.png'
           alt='Library'
           width={1920}
           height={600}
