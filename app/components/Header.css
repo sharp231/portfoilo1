@@ -150,22 +150,9 @@ li a:hover {
 }
 
 /*-------------------------------------------
-footer
--------------------------------------------*/
-#footer {
-  font-size: 10px;
-  padding: 10px 0;
-  text-align: center;
-}
-
-h2.font_2 a {
-  color: black;
-}
-
-/*-------------------------------------------
 SP
 -------------------------------------------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .about content {
     flex-direction: column;
   }
@@ -185,7 +172,7 @@ SP
     padding: 10px;
     margin-right: -10px;
   }
-  nav {
+  .nav {
     position: relative;
     padding: 15px 20px;
   }
