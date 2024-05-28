@@ -57,7 +57,7 @@ const MainContent: React.FC = () => {
           </h2>
           <ul>
             <li>
-              <div className='delayScroll'>
+              <div className='delayScroll' ref={animatedElement}>
                 <ImageComponent src='/img/onair.png' alt='onair' />
               </div>
               <h3 className='content-title'>Web制作</h3>
@@ -68,7 +68,7 @@ const MainContent: React.FC = () => {
               </p>
             </li>
             <li>
-              <div className='delayScroll'>
+              <div className='delayScroll' ref={animatedElement}>
                 <ImageComponent src='/img//Design.png' alt='Design' />
               </div>
               <h3 className='content-title'>Webデザイン</h3>
