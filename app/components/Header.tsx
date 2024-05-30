@@ -23,7 +23,6 @@ const Header: React.FC = () => {
               About
             </a>
           </li>
-          {/* hrefを使用してGoogleフォームを別のページに表示 */}
           <li>
             <a href={googleFormEmbedUrl} className='link'>
               Contact

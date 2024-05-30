@@ -10,8 +10,7 @@ const MainContent: React.FC = () => {
     if (element) {
       animationLibrary.from(element, {
         duration: 0.5,
-        // opacity: 0,
-        y: 50,
+        // opacity: 0, y: 50,
       });
     }
   }, []);
@@ -19,14 +18,11 @@ const MainContent: React.FC = () => {
   return (
     <div>
       <div id='mainvisual'>
-        <ImageComponent
-          src='/img/Library.png'
-          alt='Library'
-        />
+        <ImageComponent src='/img/Library.png' alt='Library' />
       </div>
 
-      <div>
-        <h2 id='about' className='section-title' aria-label='About section'>
+      <section id='about' aria-labelledby='about-section'>
+        <h2 id='about-section' className='section-title'>
           About
         </h2>
         <div className='content'>
@@ -46,35 +42,35 @@ const MainContent: React.FC = () => {
             </p>
           </div>
         </div>
+      </section>
 
-        <section id='world' aria-labelledby='world'>
-          <h2 id='profile' className='section-title'>
-            プログラミングの世界
-          </h2>
-          <ul>
-            <li>
-              <div className='delayScroll'>
-                <ImageComponent src='/img/onair.png' alt='onair' />
-              </div>
-              <h3 className='content-title'>Web制作</h3>
-              <p>
-                法人・個人向けにWebサイトを制作することです。
-                ホームページ制作やサイト制作とも呼ばれます。
-                Web制作を行うことで、コンテンツの発信や、自社サービス・アプリとの連携などが可能になります。
-              </p>
-            </li>
-            <li>
-              <div className='delayScroll'>
-                <ImageComponent src='/img/Design.png' alt='Design' />
-              </div>
-              <h3 className='content-title'>Webデザイン</h3>
-              <p>
-                WebサイトやWebアプリケーションの外観やUIを計画し、構築するプロセスやスキルのことを行います。
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section id='world' aria-labelledby='world-section'>
+        <h2 id='world-section' className='section-title'>
+          プログラミングの世界
+        </h2>
+        <ul>
+          <li>
+            <div className='delayScroll'>
+              <ImageComponent src='/img/onair.png' alt='onair' />
+            </div>
+            <h3 className='content-title'>Web制作</h3>
+            <p>
+              法人・個人向けにWebサイトを制作することです。
+              ホームページ制作やサイト制作とも呼ばれます。
+              Web制作を行うことで、コンテンツの発信や、自社サービス・アプリとの連携などが可能になります。
+            </p>
+          </li>
+          <li>
+            <div className='delayScroll'>
+              <ImageComponent src='/img/Design.png' alt='Design' />
+            </div>
+            <h3 className='content-title'>Webデザイン</h3>
+            <p>
+              WebサイトやWebアプリケーションの外観やUIを計画し、構築するプロセスやスキルのことを行います。
+            </p>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
