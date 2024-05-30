@@ -39,9 +39,10 @@
   text-decoration: none;
 }
 
-.link:hover {
-  color: #a2d2ff; /* 変更: ホバー時の色を変更 */
-}
+/* 変更: ホバー時の色を変更 */
+/* .link:hover {
+  color: #a2d2ff; 
+} */
 
 /* body {
   color: #383e45;
